@@ -15,3 +15,7 @@ Route::get('/bladeechostatement', function () {
 });
 
 
+Route::get('/encoding', function () {
+    $html = '<h1>Hai YuukiYuna 💕</h1><script>alert("Halo!")</script>';
+    return view('encoding', compact('html'));
+});
