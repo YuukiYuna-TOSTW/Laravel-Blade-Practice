@@ -19,3 +19,8 @@ Route::get('/encoding', function () {
     $html = '<h1>Hai YuukiYuna 💕</h1><script>alert("Halo!")</script>';
     return view('encoding', compact('html'));
 });
+
+Route::get('/alpine', function () {
+    $name = 'YuukiYuna 🌸';
+    return view('bladeandjavascriptframeforks', compact('name'));
+});
