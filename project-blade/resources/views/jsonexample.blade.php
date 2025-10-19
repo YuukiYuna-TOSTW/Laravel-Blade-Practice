@@ -8,13 +8,13 @@
     <h1>Rendering JSON</h1>
 
     <script>
-        const user = {{ Js::from($user) }};
+        const json = {{ Js::from($json) }};
 
-        console.log(user);
+        console.log(json);
 
-        document.write(`<p>Halo ${user.name} 🌸</p>`);
-        document.write(`<p>Usia: ${user.age}</p>`);
-        document.write(`<p>Skills: ${user.skills.join(', ')}</p>`);
+        document.write(`<p>Halo ${json.name} 🌸</p>`);
+        document.write(`<p>Usia: ${json.age}</p>`);
+        document.write(`<p>Skills: ${json.skills.join(', ')}</p>`);
     </script>
 </body>
 </html>

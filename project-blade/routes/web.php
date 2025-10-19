@@ -29,11 +29,22 @@ Route::get('/alpine', function () {
 
 
 Route::get('/json', function () {
-    $user = [
+    $json = [
         'name' => 'YuukiYuna 🌷',
         'age' => 18,
         'skills' => ['Laravel', 'Blade', 'Alpine.js']
     ];
 
-    return view('jsonexample', compact('user'));
+    return view('jsonexample', compact('json'));
+});
+
+
+Route::get('/verbatim', function () {
+    $verbatim = [
+        'name' => 'YuukiYuna 🌸',
+        'age' => 18,
+        'skills' => ['Laravel', 'Blade', 'Alpine.js']
+    ];
+
+    return view('verbatimexample', compact('verbatim'));
 });
