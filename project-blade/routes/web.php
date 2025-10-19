@@ -20,7 +20,20 @@ Route::get('/encoding', function () {
     return view('encoding', compact('html'));
 });
 
+
 Route::get('/alpine', function () {
     $name = 'YuukiYuna 🌸';
     return view('bladeandjavascriptframeforks', compact('name'));
+});
+
+
+
+Route::get('/json', function () {
+    $user = [
+        'name' => 'YuukiYuna 🌷',
+        'age' => 18,
+        'skills' => ['Laravel', 'Blade', 'Alpine.js']
+    ];
+
+    return view('jsonexample', compact('user'));
 });
