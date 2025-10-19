@@ -1,11 +1,17 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
-Route::get('/home', function () {
+Route::get('/livewiredemo', function () {
+    return view('livewire'); // resources/views/livewire.blade.php
+});
+
+
+Route::get('/bladeechostatement', function () {
     $name = 'YuukiYuna';
     $isActive = true;
-    return view('home', compact('name', 'isActive'));
+    return view('bladeechostatement', compact('name', 'isActive'));
 });
 
 
