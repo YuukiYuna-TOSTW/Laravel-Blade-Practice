@@ -8,17 +8,16 @@
 <body>
     <h1>Contoh @verbatim dengan Project Lama</h1>
 
-    <!-- Kita pakai @verbatim untuk bagian template Alpine.js -->
     @verbatim
     <div x-data="{ message: 'Halo, ini dari Alpine.js!' }">
         <p>{{ message }}</p>
         <button @click="message = 'Alpine.js keren 🌸'">Ubah Pesan</button>
     </div>
     @endverbatim
+    <!-- @verbatim membantu mencegah bagian tertentu yaitu message agar tidak diproses oleh Blade -->
 
     <hr>
 
-    <!-- Menampilkan data PHP menggunakan Js::from() -->
     <script>
         const verbatim = {{ Js::from($verbatim) }};
         console.log(verbatim);

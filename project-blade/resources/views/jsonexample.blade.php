@@ -9,6 +9,7 @@
 
     <script>
         const json = {{ Js::from($json) }};
+        // {{ Js::from($json) }}; merupakan bagian untuk mengubah PHP menjadi objek JavaScript yang aman
 
         console.log(json);
 

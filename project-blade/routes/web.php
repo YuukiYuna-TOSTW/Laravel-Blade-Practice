@@ -48,3 +48,19 @@ Route::get('/verbatim', function () {
 
     return view('verbatimexample', compact('verbatim'));
 });
+
+
+Route::get('/conditional', function () {
+    $conditional = [
+        'name' => 'YuukiYuna',
+        'age' => 18,
+        'role' => 'admin'
+    ];
+
+    $records = [
+        ['id' => 1, 'title' => 'Record 1'],
+        ['id' => 2, 'title' => 'Record 2']
+    ];
+
+    return view('conditionaldirectives', compact('conditional', 'records'));
+});
