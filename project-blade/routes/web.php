@@ -64,3 +64,13 @@ Route::get('/conditional', function () {
 
     return view('conditionaldirectives', compact('conditional', 'records'));
 });
+
+
+Route::get('/authentication', function () {
+    $authentication = [
+        'name' => 'YuukiYuna',
+        'role' => 'admin'
+    ];
+
+    return view('authenticationdirectives', compact('authentication'));
+});
